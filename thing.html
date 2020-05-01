@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CSS Tables Styling</title>
+    <style>
+    #Table, #Table th, #Table td {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-collapse: collapse;
+    
+}
+
+#Table th, #Table td {
+    font-size: 20px;
+    padding: 10px;
+    width: 40vw;    
+}
+
+#Table tr:nth-child(even){
+    background-color: white
+}
+
+#Table tr:nth-child(odd){
+    background-color: rgba(255, 255, 0, 0.05)
+}
+
+#Table tr:hover {
+    background-color: rgba(64, 64, 64, 0.080)
+}
+
+#First_Row th {
+    height: 25px;
+    background-color:aliceblue;
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif
+}
+</style>
+</head>
+<body>
+    <h1>Epic People Index</h1>
+    <table id="Table">
+        <tr id="First_Row">
+            <th>Name</th>
+            <th>Epic Boolean</th>
+        </tr>
+        <tr>
+            <td>Skeletal</td>
+            <td>Epic</td>
+        </tr>
+        <tr>
+            <td>Lenny</td>
+            <td>Not Epic</td>
+        </tr>
+        <tr>
+            <td>Boris</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>HaLL</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+</body>
+
+</html>
