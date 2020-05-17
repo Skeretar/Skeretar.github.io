@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Oh no!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            display: table;
+            position: absolute; top: 0; left: 0; 
+            width: 100%; height: 100%;
+            background-color: hsl(0, 0%, 6%);
+            margin: 0; padding: 0;
+            font-family: Arial, Verdana, "Sans-serif";
+            z-index: -2
+        }
+        
+        .main-block {
+            color: white;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .main {
+            font-size: 3em;
+            padding: 10px;
+            font-weight: bolder;
+            background-color: hsl(0, 4%, 9%);
+            border-top: 2px solid hsl(0, 0%, 3.5%);
+            box-shadow: 0px -5px 20px black;
+        }
+        
+        .error {
+            padding: 5px;
+            font-size: 1.5em;
+            background-color: #410707;
+            animation: glow 5s infinite;
+        }
+        .description {
+            padding: 10px;
+            background-color: hsl(0, 4%, 9%);
+            border-bottom: 2px solid hsl(0, 0%, 3.5%);
+            box-shadow: 0px 5px 20px black
+        }
+        p {
+            margin: 0;
+        }
+        
+        @keyframes glow {
+            0% { background-color: #410707}
+            50% { background-color: #e61c1c}
+            100% { background-color: #410707}
+        }
+    </style>
+</head>
+<body>
+    <div class="main-block"><div class="main">Oh no!</div><p class="error">404 - Page not found</p><p class="description">If you found this page, then it means that either you typed something randomly on the bar or you really came across an error. If you believe it's an error, contact Skeletal#3548 as soon as possible.</p></div>
+    
+</body>
+
+</html>
